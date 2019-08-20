@@ -13,8 +13,7 @@ app
     const server = express();
     server.get('/abc', (req, res) => {
       const actualPage = '/custom-link';
-      // const queryParams = { id: req.params.id };
-      return app.render(req, res, actualPage, null);
+      return app.render(req, res, actualPage, req.query);
     });
 
     server.get('*', (req, res) => handle(req, res));

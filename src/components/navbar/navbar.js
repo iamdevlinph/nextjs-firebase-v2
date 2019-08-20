@@ -17,7 +17,7 @@ const NavbarComponent = () => {
       </div>
 
       <div>
-        <Link href="/abc" as="/abc">
+        <Link href="/custom-link" as="/abc">
           <a>Custom Link Page</a>
         </Link>
       </div>
