@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "name": "nextjs-firebase-v2",
+  "public": false,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next",
+      "config": {
+        "maxLambdaSize": "11mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/abc",
+      "dest": "/custom-link"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

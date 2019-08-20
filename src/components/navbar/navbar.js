@@ -9,9 +9,16 @@ const NavbarComponent = () => {
           <a>Index Page</a>
         </Link>
       </div>
+
       <div>
         <Link href="/about">
           <a>About Page</a>
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/custom-link" as="/abc">
+          <a>Custom Link Page</a>
         </Link>
       </div>
     </>
